@@ -1,4 +1,4 @@
-﻿// 1.4.8 Write a program to determine the number pairs of  values
+// 1.4.8 Write a program to determine the number pairs of  values
 // 	in an input ﬁle that are equal. If your ﬁrst try is quadratic,
 //	think again and use Arrays.sort() to develop a linearithmic solution.
 
