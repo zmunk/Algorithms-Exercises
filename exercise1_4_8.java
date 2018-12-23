@@ -2,6 +2,8 @@
 // 	in an input ﬁle that are equal. If your ﬁrst try is quadratic,
 //	think again and use Arrays.sort() to develop a linearithmic solution.
 
+// Note: code will not work directly, must create separate class for each main
+
 // quadratic solution
 public static void main(String[] args) {
 	int[] values = new In(args[0]).readAllInts();
@@ -26,5 +28,5 @@ public static void main(String[] args) {
 			count++;
 		// count is incremented twice for each pair found
 	}
-	System.out.println(count / 2) // compensate for double incrementation
+	System.out.println(count / 2); // compensate for double incrementation
 }
