@@ -1,2 +1,2 @@
 # Algorithms-Exercises
-Exercises from Algorithms (Sedgewick, Wayne, 4th)
+My solutions to exercises from Algorithms (Sedgewick, Wayne, 4th)
