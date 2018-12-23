@@ -1,3 +1,6 @@
+// 1.3.9 Write a program that takes an expression without left parentheses
+//	 and prints the equivalent infix expression with the parentheses inserted.
+
 package pkg;
 
 import java.util.Stack;
