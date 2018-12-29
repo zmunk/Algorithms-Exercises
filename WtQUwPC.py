@@ -1,3 +1,6 @@
+# Weighted Quick Union with Path Compression
+# with tree visualizer
+
 from tkinter import *
 from math import *
 
