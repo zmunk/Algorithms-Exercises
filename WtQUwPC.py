@@ -1,7 +1,6 @@
 from tkinter import *
 from math import *
 
-
 class Forest:
     def __init__(self, arr):
         self.arr = arr
@@ -170,10 +169,10 @@ class WQUPC:
         print ""
 
 
-with open("mediumUF.txt", 'r') as smallUF:
-    n = int(smallUF.readline())
+with open("mediumUF.txt", 'r') as mediumUF:
+    n = int(mediumUF.readline())
     wtq = WQUPC(n)
-    for line in smallUF:
+    for line in mediumUF:
         p, q = [int(i) for i in line.split(" ")]
         wtq.union(p, q)
 
