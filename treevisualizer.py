@@ -134,41 +134,6 @@ class Node:
         self.canv.create_line(x1, y1, x2, y2)
 
 
-class WQUPC:
-    def __init__(self, n):
-        self.count = n
-        self.id = range(n)
-        self.sz = [1] * n
-
-    def find(self, p):
-        root = p
-        while root != self.id[root]:
-            root = self.id[root]
-        while p != root:
-            newp = self.id[p]
-            self.id[p] = root
-            p = newp
-        return root
-
-    def union(self, p, q):
-        rtP, rtQ = self.find(p), self.find(q)
-        if rtP == rtQ: return
-        if self.sz[rtP] > self.sz[rtQ]:
-            self.id[rtQ] = rtP
-            self.sz[rtQ] += self.sz[rtP]
-        else:
-            self.id[rtP] = rtQ
-            self.sz[rtP] += self.sz[rtQ]
-        self.count -= 1
-
-    def print_id(self):
-        print "\t",
-        for node in range(10): print str(node) + "\t",
-        print "\nid:\t",
-        for id in self.id: print str(id) + "\t",
-        print ""
-
-
 id = [0, 27, 27, 27, 27, 30, 32, 8, 38, 35, 45, 38, 38, 15,
       15, 45, 45, 38, 17, 20, 43, 46, 24, 46, 45, 0, 27, 27,
       27, 27, 38, 38, 45, 38, 8, 45, 11, 15, 45, 40, 15, 15,
