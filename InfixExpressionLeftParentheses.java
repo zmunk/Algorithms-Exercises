@@ -19,7 +19,7 @@ public class InfixExpressionLeftParentheses {
             else
                 stack.push(value);
         }
-      	System.out.println(stack.pop());
+      	    System.out.println(stack.pop());
 	}
 	
 	public static void main(String[] args) {
