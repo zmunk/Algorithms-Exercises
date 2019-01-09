@@ -21,6 +21,7 @@ public class InfixExpressionLeftParentheses {
         }
         System.out.println(stack.pop());
     }
+    
     static void main(String[] args) {
         printInfix(" ( ( ( 1 + 2 * ( 3 - 4 * ( 5 - 6 ");
     }
